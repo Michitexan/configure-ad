@@ -19,13 +19,13 @@ This tutorial outlines the implementation of on-premises Active Directory Using 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Tutorial Stages</h2>
 
-- Setup Resources
-- Install Active Directory
-- Create Accounts
+- 1. Setup Resources
+- 2. Install Active Directory
+- 3. Create Accounts
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>1. Setup Resources</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>

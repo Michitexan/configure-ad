@@ -3,7 +3,7 @@
 </p>
 
 <h1>Configuring Systems to Network with Azure for Active Directory</h1>
-This tutorial outlines the implementation of on-premises Active Directory
+This tutorial outlines the implementation of on-premises Active Directory Using Asure Virtual Machines as a template 
 <br />
 
 
@@ -21,10 +21,9 @@ This tutorial outlines the implementation of on-premises Active Directory
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup Resources
+- Install Active Directory
+- Create Accounts
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -36,6 +35,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
+<h2>Deployment and Configuration Steps</h2>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -44,6 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
+<h2>Deployment and Configuration Steps</h2>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>

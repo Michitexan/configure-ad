@@ -3,7 +3,7 @@
 </p>
 
 <h1>Configuring Systems to Network with Azure for Active Directory</h1>
-This tutorial outlines the implementation of on-premises Active Directory Using Asure Virtual Machines as a template 
+This tutorial outlines the implementation of on-premises Active Directory Using Asure Virtual Machines as a template
 <br />
 
 
@@ -34,12 +34,10 @@ Active Directory is a powerful tool, and while this tutorial will focus on using
 <br />
 
 <h2>1. Setup Resources</h2>
-
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+The first step in this process is to create the Virtual machines. This will require at least two instances to be created. One running a server OS, like Microsoft Server 2022, and the other running any consumer grade OS. Ensure that both Virtual Machines are established within the same Virtual Network. This can be Verified with Network Watcher. The Virtual Machine with The server OS installed, from now on referred to as DC-1, should have its NIC Private IP set to "Static". This is important to do, as this is where the rest of the network will route through, and if it is dynamic, other computers in the network will not be able to locate this server. DC-1 should be the center of this network, with each machine connected to it, and using DC-1's V-net, and group. To ensure that Connectivity to DC-1 is possible, log into DC-1 and enable ICMPv4 in on the local Windows Firewall.
 
+  Secondly, turn to the the networked machines running consumer OS, from now on referred to as Client.
 </p>
 <br />
 

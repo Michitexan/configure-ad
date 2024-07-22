@@ -35,13 +35,23 @@ Active Directory is a powerful tool, and while this tutorial will focus on using
 
 <h2>1. Setup Resources</h2>
 <p>
-The first step in this process is to create the Virtual machines. This will require at least two instances to be created. One running a server OS, like Microsoft Server 2022, and the other running any consumer grade OS. Ensure that both Virtual Machines are established within the same Virtual Network. This can be Verified with Network Watcher. The Virtual Machine with The server OS installed, from now on referred to as DC-1, should have its NIC Private IP set to "Static". This is important to do, as this is where the rest of the network will route through, and if it is dynamic, other computers in the network will not be able to locate this server. DC-1 should be the center of this network, with each machine connected to it, and using DC-1's V-net, and group. To ensure that Connectivity to DC-1 is possible, log into DC-1 and enable ICMPv4 in on the local Windows Firewall.
+The first step in this process is to create the Virtual machines. This will require at least two instances to be created. One running a server OS, like Microsoft Server 2022, and the other running any consumer grade OS. Ensure that both Virtual Machines are established within the same Virtual Network. This can be Verified with Network Watcher. The Virtual Machine with The server OS installed, from now on referred to as DC-1, should have its NIC Private IP set to "Static". This is important to do, as this is where the rest of the network will route through, and if it is dynamic, other computers in the network will not be able to locate this server.
+</p>
+<p>
+  <img src="https://i.imgur.com/3NO7ePm.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+  To do this, Go to network settings and click on the NIC setings. This will open up a page with a new menu bar on the left side. Select "IP Configurations" under the "Settings" group. There will be a box toward the bottom of the page that contains the status of the IP address, with the default being set to "Dynamic". Click this box to open a new page.
+ <p>
+  <img src="https://i.imgur.com/HMBoPzs.jpeg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>
+  At the bottom of the list of options will be the option to toggle between "Dynamic" and "Static" make sure the option for static is selected, and save the changes. DC-1 should be the center of this network, with each machine connected to it, and using DC-1's V-net, and group. To ensure that Connectivity to DC-1 is possible, log into DC-1, via Remote Desktop, and enable ICMPv4 in on the local Windows Firewall.
 
-  Secondly, turn to the the networked machines running consumer OS, from now on referred to as Client.
+  Secondly, turn to the the networked machines running consumer OS, from now on referred to as Client. When the Client machienes are created, it is vitally important for Active Directory that they share the same network with DC-1. Azure will create a Vnet with the creation of DC-1, so when creating the Client machienes, DC-1's Vnet will appear in the Network dropdown menu. Select this network with the creation of each new Client machine. 
 </p>
 <br />
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Install Active Directory</h2>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -50,7 +60,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Create Accounts</h2>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
